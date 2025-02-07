@@ -1,0 +1,19 @@
+.section-description {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  gap: 1rem;
+}
+.description-text {
+  width: 42rem;
+  text-align: center;
+  background-color: rgba(139, 0, 0, 0.767);
+  color: white;
+
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.description-text.bottom {
+  align-self: flex-end;
+}
