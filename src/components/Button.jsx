@@ -6,7 +6,6 @@ export function Button({ text }) {
       className="btn"
       onClick={(e) => {
         const result = document.getElementById(e.target.innerText);
-        console.log(result);
         result.scrollIntoView({ behavior: "smooth" });
       }}
     >
