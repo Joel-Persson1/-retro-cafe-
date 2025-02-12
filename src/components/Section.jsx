@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Redbox } from "./RedBoxes";
-import { ListItem } from "./ListItems";
+import { BlackBox } from "./BlackBox";
 
 export function Section({ object }) {
   return (
@@ -17,13 +17,7 @@ export function Section({ object }) {
             text={object.secondDescription}
           />
         </article>
-        <article className="section-pricing">
-          <ul className="pricing-list">
-            {object.info.map((drink) => {
-              return <ListItem key={drink.text} drink={drink} />;
-            })}
-          </ul>
-        </article>
+        <BlackBox object={object} />
       </main>
     </section>
   );
